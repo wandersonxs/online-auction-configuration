@@ -18,7 +18,7 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
     serviceUrl:
-      defaultZone: http://configuration-services:8888
+      defaultZone: ${EUREKA_URI:http://localhost:8761/eureka} #http://configuration-services:8888
 
 management:
   endpoints:
